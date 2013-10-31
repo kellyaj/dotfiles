@@ -1,0 +1,14 @@
+[user]
+	name = Andrew Kelly
+	email = akelly@8thlight.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
+[push]
+  default = current
