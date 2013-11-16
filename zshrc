@@ -58,7 +58,11 @@ alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias wtf="sed -n '1, 25 p' ~/.zshrc"
 
+# Nocorrects
+alias npm='nocorrect npm'
 
+
+# Functions
 tls() {
   print $fg[yellow] "listing tmux sessions..." $fg[cyan]
   tlsessions
@@ -85,8 +89,6 @@ resource() {
   print $fg[yellow] "done"
 }
 
-# Nocorrects
-alias npm='nocorrect npm'
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="robbyrussell"
