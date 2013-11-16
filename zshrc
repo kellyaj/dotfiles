@@ -4,6 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 # Navigation
 alias projects='cd /Users/akelly/projects'
 alias sandbox='cd /Users/akelly/sandbox'
+alias dotfiles='cd /Users/akelly/misc/dotfiles'
 
 # Samaritan navigation
 alias platform='cd /Users/akelly/projects/samaritan/platformjs'
@@ -16,6 +17,9 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gpr='git pull --rebase'
+
+# tmux related
+alias tls='tmux list-sessions'
 
 # misc
 alias resource='source ~/.zshrc'
