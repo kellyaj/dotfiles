@@ -32,7 +32,7 @@ alias tksession='tmux kill-session -t'
 # misc
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
-alias wtf="sed -n '7, 55 p' ~/.zshrc"
+alias wtf="sed -n '8, 56 p' ~/.zshrc"
 
 tls() {
   print $fg[yellow] "listing tmux sessions..." $fg[cyan]
