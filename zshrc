@@ -1,3 +1,6 @@
+autoload -U compinit
+compinit
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -17,9 +20,12 @@ alias gco='git checkout'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gpr='git pull --rebase'
+alias f='git grep'
 
 # tmux related
 alias tls='tmux list-sessions'
+alias ta='tmux attach-session -t'
+alias trs='tmux rename-session -t'
 
 # misc
 alias resource='source ~/.zshrc'
