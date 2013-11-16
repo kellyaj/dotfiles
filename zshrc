@@ -1,5 +1,6 @@
 autoload -U compinit
 compinit
+DISABLE_AUTO_TITLE=true
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -31,6 +32,7 @@ alias tksession='tmux kill-session -t'
 # misc
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
+alias wtf="sed -n '7, 55 p' ~/.zshrc"
 
 tls() {
   print $fg[yellow] "listing tmux sessions..." $fg[cyan]
