@@ -23,13 +23,35 @@ alias gpr='git pull --rebase'
 alias f='git grep'
 
 # tmux related
-alias tls='tmux list-sessions'
+alias tlsessions='tmux list-sessions'
 alias ta='tmux attach-session -t'
-alias trs='tmux rename-session -t'
+alias tmuxrs='tmux rename-session -t'
+alias tksession='tmux kill-session -t'
 
 # misc
-alias resource='source ~/.zshrc'
+alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
+
+tls() {
+  print $fg[yellow] "listing tmux sessions..." $fg[cyan]
+  tlsessions
+}
+
+trs() {
+  tmuxrs $1 $2
+  print $fg[red] "tmux window" $fg[cyan] $1 $fg[red] "was renamed to" $fg[cyan] $2 "."
+}
+
+tk() {
+  tksession $1
+  print $fg[red] "tmux window" $fg[cyan] $1 $fg[red] "was killed."
+}
+
+resource() {
+  print $fg[yellow] "re-sourcing zsh..."
+  resourcezsh
+  print $fg[yellow] "done"
+}
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
