@@ -18,6 +18,7 @@
 #   ezsh                   will open this file for editing
 #
 # Functions:
+#   cs session_name        creates a session with name 'session_name'
 #   tls                    lists all tmux sessions
 #   trs old_name new_name  renames session 'oldname' to 'newname'
 #   tk session_name        kills session 'session_name'
@@ -56,7 +57,7 @@ alias tksession='tmux kill-session -t'
 alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
-alias wtf="sed -n '1, 25 p' ~/.zshrc"
+alias wtf="sed -n '1, 26 p' ~/.zshrc"
 
 # Nocorrects
 alias npm='nocorrect npm'
@@ -87,6 +88,10 @@ resource() {
   print $fg[yellow] "re-sourcing zsh..."
   resourcezsh
   print $fg[yellow] "done"
+}
+
+cs() {
+  tmux new-session -s $1
 }
 
 # Set name of the theme to load.
