@@ -57,6 +57,7 @@ alias tksession='tmux kill-session -t'
 alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
+alias subl='sublime'
 alias wtf="sed -n '1, 26 p' ~/.zshrc"
 
 # Nocorrects
