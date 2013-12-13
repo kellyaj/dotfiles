@@ -95,6 +95,14 @@ cs() {
   tmux new-session -s $1
 }
 
+pushdotfiles() {
+  dotfiles
+  git --no-pager diff
+  tmp= vared -p 'good to push?: '
+  echo $tmp
+  print $fg[yellow] "pushing dotfiles..."
+}
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="robbyrussell"
