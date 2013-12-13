@@ -24,6 +24,7 @@
 #   tk session_name        kills session 'session_name'
 #   savechanges            copies ~/.zshrc to the dotfiles folder
 #   resource               source ~/.zshrc
+#   pdf                    pushes dotfiles upon confirmation
 
 autoload -U compinit
 compinit
@@ -58,7 +59,7 @@ alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
-alias wtf="sed -n '1, 26 p' ~/.zshrc"
+alias wtf="sed -n '1, 27 p' ~/.zshrc"
 
 # Nocorrects
 alias npm='nocorrect npm'
@@ -95,12 +96,23 @@ cs() {
   tmux new-session -s $1
 }
 
-pushdotfiles() {
+pdf() {
   dotfiles
   git --no-pager diff
-  tmp= vared -p 'good to push?: '
-  echo $tmp
-  print $fg[yellow] "pushing dotfiles..."
+  print $fg[red] "good to push?: "
+  read ans
+  if [[ "${ans}" == "y" || "${ans}" == "yes" ]]; then
+    print $fg[yellow] "pushing dotfiles..."
+    git add -A
+    print $fg[yellow] "enter a commit message: "
+    read cm
+    git commit -m "${cm}"
+    git pull --rebase
+    git push
+  else
+    print $fg[red] "nothing was pushed."
+  fi
+
 }
 
 # Set name of the theme to load.
