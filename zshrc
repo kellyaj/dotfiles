@@ -3,6 +3,7 @@
 #   sandbox                /Users/akelly/sandbox
 #   dotfiles               /Users/akelly/misc/dotfiles
 #   platform               SMI platformjs
+#   devops                 /Users/akelly/devops
 #
 # Git Commands:
 #   gco                    git checkout
@@ -16,6 +17,7 @@
 #
 # Misc:
 #   ezsh                   will open this file for editing
+#   t                      tree
 #
 # Functions:
 #   cs session_name        creates a session with name 'session_name'
@@ -37,6 +39,7 @@ ZSH=$HOME/.oh-my-zsh
 alias projects='cd /Users/akelly/projects'
 alias sandbox='cd /Users/akelly/sandbox'
 alias dotfiles='cd /Users/akelly/misc/dotfiles'
+alias devops='cd /Users/akelly/devops'
 
 # Samaritan navigation:
 alias platform='cd /Users/akelly/projects/samaritan/platformjs'
@@ -59,10 +62,13 @@ alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
-alias wtf="sed -n '1, 27 p' ~/.zshrc"
+alias wtf="sed -n '1, 29 p' ~/.zshrc"
 
 # Nocorrects
 alias npm='nocorrect npm'
+
+# other
+alias t='tree'
 
 
 # Functions
