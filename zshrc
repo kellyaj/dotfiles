@@ -66,6 +66,7 @@ alias wtf="sed -n '1, 29 p' ~/.zshrc"
 
 # Nocorrects
 alias npm='nocorrect npm'
+alias knife='nocorrect knife'
 
 # other
 alias t='tree'
