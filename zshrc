@@ -27,6 +27,7 @@
 #   savechanges            copies ~/.zshrc to the dotfiles folder
 #   resource               source ~/.zshrc
 #   pdf                    pushes dotfiles upon confirmation
+#   ec2 user@instance      ssh into an ec2 instance using /devops/keypairs
 
 autoload -U compinit
 compinit
@@ -66,7 +67,7 @@ alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
-alias wtf="sed -n '1, 29 p' ~/.zshrc"
+alias wtf="sed -n '1, 30 p' ~/.zshrc"
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 
 # Nocorrects
