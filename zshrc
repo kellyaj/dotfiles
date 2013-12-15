@@ -67,6 +67,7 @@ alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
 alias wtf="sed -n '1, 29 p' ~/.zshrc"
+alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 
 # Nocorrects
 alias npm='nocorrect npm'
@@ -123,7 +124,6 @@ pdf() {
   else
     print $fg[red] "nothing was pushed."
   fi
-
 }
 
 # Set name of the theme to load.
