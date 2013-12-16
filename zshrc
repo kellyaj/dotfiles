@@ -44,6 +44,7 @@ alias devops='cd /Users/akelly/devops'
 
 # Samaritan navigation:
 alias platform='cd /Users/akelly/projects/samaritan/platformjs'
+alias deckepic='cd /Users/akelly/projects/deck_epic'
 
 # Git commands:
 alias gco='git checkout'
