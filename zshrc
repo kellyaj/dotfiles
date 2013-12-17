@@ -42,9 +42,12 @@ alias sandbox='cd /Users/akelly/sandbox'
 alias dotfiles='cd /Users/akelly/misc/dotfiles'
 alias devops='cd /Users/akelly/devops'
 
-# Samaritan navigation:
+# Project navigation:
 alias platform='cd /Users/akelly/projects/samaritan/platformjs'
 alias deckepic='cd /Users/akelly/projects/deck_epic'
+
+# Project commands:
+alias gbd='grunt buildDev'
 
 # Git commands:
 alias gco='git checkout'
