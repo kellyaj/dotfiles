@@ -129,6 +129,7 @@ pdf() {
   else
     print $fg[red] "nothing was pushed."
   fi
+  cd $OLDPWD
 }
 
 # Set name of the theme to load.
