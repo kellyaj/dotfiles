@@ -62,9 +62,12 @@ alias ta='tmux attach-session -t'
 alias tmuxrs='tmux rename-session -t'
 alias tksession='tmux kill-session -t'
 
-#rails
+# rails
 alias bi='bundle install'
 alias be='bundle exec'
+
+# node
+alias ni='npm install'
 
 # misc
 alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
