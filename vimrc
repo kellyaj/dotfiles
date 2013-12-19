@@ -65,7 +65,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " html colors
 autocmd BufNewFile,BufRead *.cshtml set filetype=html
-autocmd BufNewFile,BufRead *.ejs set filetype=html
 
 set laststatus=2
 set statusline=
@@ -172,3 +171,8 @@ function! ScratchToggle()
 endfunction
 
 nnoremap <silent> <leader><tab> :ScratchToggle<cr>
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
