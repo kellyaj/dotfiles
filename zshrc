@@ -84,7 +84,6 @@ alias knife='nocorrect knife'
 # other
 alias t='tree'
 
-
 # Functions
 tls() {
   print $fg[yellow] "listing tmux sessions..." $fg[cyan]
@@ -150,3 +149,4 @@ source $ZSH/oh-my-zsh.sh
 #export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 eval "$(rbenv init -)"
+ulimit -n 2048
