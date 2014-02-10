@@ -150,3 +150,4 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 eval "$(rbenv init -)"
 ulimit -n 2048
+export VISUAL=vim
