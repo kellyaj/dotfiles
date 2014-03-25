@@ -4,6 +4,7 @@
 #   dotfiles               /Users/akelly/misc/dotfiles
 #   platform               SMI platformjs
 #   devops                 /Users/akelly/devops
+#   8l                     /Users/akelly/projects/8thlight
 #
 # Git Commands:
 #   gco                    git checkout
@@ -41,6 +42,7 @@ alias projects='cd /Users/akelly/projects'
 alias sandbox='cd /Users/akelly/sandbox'
 alias dotfiles='cd /Users/akelly/misc/dotfiles'
 alias devops='cd /Users/akelly/devops'
+alias 8l='cd /Users/akelly/projects/8thlight/'
 
 # Project navigation:
 alias platform='cd /Users/akelly/projects/samaritan/platformjs'
@@ -74,7 +76,7 @@ alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
-alias wtf="sed -n '1, 30 p' ~/.zshrc"
+alias wtf="sed -n '1, 31 p' ~/.zshrc"
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 
 # Nocorrects
