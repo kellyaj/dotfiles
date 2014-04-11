@@ -82,6 +82,7 @@ alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 # Nocorrects
 alias npm='nocorrect npm'
 alias knife='nocorrect knife'
+alias ber='nocorrect bundle exec rspec'
 
 # other
 alias t='tree'
