@@ -38,14 +38,14 @@ DISABLE_AUTO_TITLE=true
 ZSH=$HOME/.oh-my-zsh
 
 # Navigation:
-alias projects='cd /Users/akelly/projects'
-alias sandbox='cd /Users/akelly/sandbox'
-alias dotfiles='cd /Users/akelly/misc/dotfiles'
+alias projects='cd /Users/akelly/projects && ls'
+alias sandbox='cd /Users/akelly/sandbox && ls'
+alias dotfiles='cd /Users/akelly/misc/dotfiles && ls'
 alias devops='cd /Users/akelly/devops'
 alias 8l='cd /Users/akelly/projects/8thlight/'
 
 # Project navigation:
-alias platform='cd /Users/akelly/projects/samaritan/platformjs'
+alias pond='cd /Users/akelly/projects/clients/groupon && ls'
 alias deckepic='cd /Users/akelly/projects/deck_epic'
 
 # Project commands:
@@ -78,6 +78,8 @@ alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
 alias wtf="sed -n '1, 31 p' ~/.zshrc"
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
+alias wtf="sed -n '1, 31 p' ~/.zshrc"
+alias wtfssh="sed -n '1, 40 p' /Users/akelly/projects/clients/groupon/ssh-notes"
 
 # Nocorrects
 alias npm='nocorrect npm'
@@ -135,6 +137,10 @@ pdf() {
     print $fg[red] "nothing was pushed."
   fi
   cd $OLDPWD
+}
+
+genuuid () {
+  uuidgen | awk '{print tolower($0)}'
 }
 
 # Set name of the theme to load.
