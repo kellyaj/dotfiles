@@ -63,6 +63,7 @@ alias tlsessions='tmux list-sessions'
 alias ta='tmux attach-session -t'
 alias tmuxrs='tmux rename-session -t'
 alias tksession='tmux kill-session -t'
+alias kopy='reattach-to-user-namespace pbcopy'
 
 # rails
 alias bi='bundle install'
@@ -140,7 +141,7 @@ pdf() {
 }
 
 genuuid () {
-  uuidgen | awk '{print tolower($0)}'
+  uuidgen | awk '{print tolower($0)}' | reattach-to-user-namespace pbcopy
 }
 
 # Set name of the theme to load.
