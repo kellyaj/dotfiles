@@ -144,6 +144,13 @@ genuuid () {
   uuidgen | awk '{print tolower($0)}' | reattach-to-user-namespace pbcopy
 }
 
+rspecloop() {
+  for run in {1..$1}
+  do
+    bundle exec rspec
+  done
+}
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="robbyrussell"
