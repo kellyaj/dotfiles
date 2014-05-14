@@ -1,35 +1,3 @@
-# Navigation:
-#   projects               /Users/akelly/projects
-#   sandbox                /Users/akelly/sandbox
-#   dotfiles               /Users/akelly/misc/dotfiles
-#   platform               SMI platformjs
-#   devops                 /Users/akelly/devops
-#   8l                     /Users/akelly/projects/8thlight
-#
-# Git Commands:
-#   gco                    git checkout
-#   gd                     git diff
-#   gds                    git diff --staged
-#   gpr                    git pull --rebase
-#   f some_string          git grep "some_string"
-#
-# Tmux:
-#   ta some_session        will attach to tmux session named 'some_session'
-#
-# Misc:
-#   ezsh                   will open this file for editing
-#   t                      tree
-#
-# Functions:
-#   cs session_name        creates a session with name 'session_name'
-#   tls                    lists all tmux sessions
-#   trs old_name new_name  renames session 'oldname' to 'newname'
-#   tk session_name        kills session 'session_name'
-#   savechanges            copies ~/.zshrc to the dotfiles folder
-#   resource               source ~/.zshrc
-#   pdf                    pushes dotfiles upon confirmation
-#   ec2 user@instance      ssh into an ec2 instance using /devops/keypairs
-
 autoload -U compinit
 compinit
 DISABLE_AUTO_TITLE=true
@@ -77,9 +45,8 @@ alias savezsh='cp ~/.zshrc /Users/akelly/misc/dotfiles/zshrc'
 alias resourcezsh='source ~/.zshrc'
 alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
-alias wtf="sed -n '1, 31 p' ~/.zshrc"
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
-alias wtf="sed -n '1, 31 p' ~/.zshrc"
+alias wtf="sed -n '1, 500 p' ~/.wtfcommands"
 alias wtfssh="sed -n '1, 40 p' /Users/akelly/projects/clients/groupon/ssh-notes"
 
 # Nocorrects
