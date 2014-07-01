@@ -13,7 +13,7 @@ alias devops='cd /Users/akelly/devops'
 alias 8l='cd /Users/akelly/projects/8thlight/'
 
 # Project navigation:
-alias pond='cd /Users/akelly/projects/clients/groupon && ls'
+alias groupon='cd /Users/akelly/projects/clients/groupon && ls'
 alias deckepic='cd /Users/akelly/projects/deck_epic'
 
 # Project commands:
@@ -48,6 +48,7 @@ alias subl='sublime'
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 alias wtf="sed -n '1, 500 p' ~/.wtfcommands"
 alias wtfssh="sed -n '1, 40 p' /Users/akelly/projects/clients/groupon/ssh-notes"
+alias rdbm="RAILS_ENV=test bundle exec rake db:migrate"
 
 # Nocorrects
 alias npm='nocorrect npm'
