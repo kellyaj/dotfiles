@@ -49,6 +49,7 @@ alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 alias wtf="sed -n '1, 500 p' ~/.wtfcommands"
 alias wtfssh="sed -n '1, 40 p' /Users/akelly/projects/clients/groupon/ssh-notes"
 alias rdbm="RAILS_ENV=test bundle exec rake db:migrate"
+alias utc="date -u"
 
 # Nocorrects
 alias npm='nocorrect npm'
