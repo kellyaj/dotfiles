@@ -15,6 +15,7 @@ alias 8l='cd /Users/akelly/projects/8thlight/'
 # Project navigation:
 alias groupon='cd /Users/akelly/projects/clients/groupon && ls'
 alias deckepic='cd /Users/akelly/projects/deck_epic'
+alias samaritan='cd /Users/akelly/projects/clients/samaritan'
 
 # Project commands:
 alias gbd='grunt buildDev'
