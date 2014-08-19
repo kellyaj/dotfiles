@@ -11,6 +11,7 @@ alias sandbox='cd /Users/akelly/sandbox && ls'
 alias dotfiles='cd /Users/akelly/misc/dotfiles && ls'
 alias devops='cd /Users/akelly/devops'
 alias 8l='cd /Users/akelly/projects/8thlight/'
+alias pd='pushd'
 
 # Project navigation:
 alias groupon='cd /Users/akelly/projects/clients/groupon && ls'
