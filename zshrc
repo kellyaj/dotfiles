@@ -13,11 +13,6 @@ alias devops='cd /Users/akelly/devops'
 alias 8l='cd /Users/akelly/projects/8thlight/'
 alias pd='pushd'
 
-# Project navigation:
-alias groupon='cd /Users/akelly/projects/clients/groupon && ls'
-alias deckepic='cd /Users/akelly/projects/deck_epic'
-alias samaritan='cd /Users/akelly/projects/clients/samaritan'
-
 # Project commands:
 alias gbd='grunt buildDev'
 
@@ -49,7 +44,6 @@ alias ezsh='vim ~/.zshrc'
 alias subl='sublime'
 alias ec2='ssh -i /Users/akelly/devops/keypairs/kellyaj-key-pair.pem'
 alias wtf="sed -n '1, 500 p' ~/.wtfcommands"
-alias wtfssh="sed -n '1, 40 p' /Users/akelly/projects/clients/groupon/ssh-notes"
 alias rdbm="RAILS_ENV=test bundle exec rake db:migrate"
 alias utc="date -u"
 
